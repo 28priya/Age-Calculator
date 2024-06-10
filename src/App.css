@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Centering the content and adding a light background */
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff; /* Light colored background */
 }
 
-.App-link {
-  color: #61dafb;
+.age-calculator {
+  text-align: center;
+  background-color: #ffffff; /* White background for the calculator box */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.age-calculator h1, .age-calculator h2 {
+  font-size: 2em; /* Make text bigger */
+  margin: 20px 0;
+}
+
+.age-calculator input {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1em; /* Increase font size for better readability */
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.age-calculator input:focus {
+  border-color: #a0a0a0; /* Change border color on focus */
+}
+
+.age-calculator button {
+  padding: 10px 20px;
+  font-size: 1em; /* Increase font size */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.age-calculator button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.age-calculator button:active {
+  transform: scale(1); /* Reset button size on click */
+}
+
+.age-calculator h2 {
+  margin-top: 20px;
+  color: green;
+  font-size: 1.5em; /* Increase font size for age text */
 }
